@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="추천인닷컴">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="5" x2="56" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6478F6"/>
+      <stop offset=".55" stop-color="#4258E8"/>
+      <stop offset="1" stop-color="#17251F"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#2030A0" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="19" fill="url(#bg)"/>
+  <circle cx="47" cy="17" r="7" fill="#C8F25F"/>
+  <path d="M18 20h20M18 32h28M18 44h18" stroke="#fff" stroke-width="6" stroke-linecap="round" filter="url(#s)"/>
+  <path d="M38 42l5 5 10-12" fill="none" stroke="#C8F25F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

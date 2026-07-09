@@ -1,0 +1,7 @@
+.agents/
+.wrangler/
+recommendation-site-deploy.zip
+
+*.log
+.DS_Store
+Thumbs.db

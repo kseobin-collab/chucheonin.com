@@ -1,0 +1,13 @@
+{
+  "name": "추천인닷컴",
+  "short_name": "추천인닷컴",
+  "description": "추천코드와 친구초대 혜택을 빠르게 확인하는 추천인 큐레이션 서비스",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f6ef",
+  "theme_color": "#17251f",
+  "icons": [
+    {"src":"/assets/favicon.svg","sizes":"any","type":"image/svg+xml"},
+    {"src":"/assets/logo.svg","sizes":"512x512","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

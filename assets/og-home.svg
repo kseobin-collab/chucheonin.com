@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f6ef"/>
+  <circle cx="1030" cy="100" r="300" fill="#c8f25f" opacity=".6"/>
+  <defs>
+    <linearGradient id="logoBg" x1="90" y1="80" x2="148" y2="138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6478F6"/>
+      <stop offset=".55" stop-color="#4258E8"/>
+      <stop offset="1" stop-color="#17251F"/>
+    </linearGradient>
+  </defs>
+  <rect x="90" y="80" width="58" height="58" rx="17" fill="url(#logoBg)"/>
+  <circle cx="132" cy="95" r="7" fill="#c8f25f"/>
+  <path d="M105 100h21M105 111h28M105 122h18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M126 124l6 6 13-16" fill="none" stroke="#c8f25f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="121" fill="#17251f" font-family="Arial,sans-serif" font-size="34" font-weight="800">추천인닷컴</text>
+  <text x="90" y="280" fill="#17251f" font-family="Arial,sans-serif" font-size="78" font-weight="900">가입 전 10초,</text>
+  <text x="90" y="385" fill="#163f30" font-family="Arial,sans-serif" font-size="92" font-weight="900">혜택은 더 크게.</text>
+  <rect x="88" y="405" width="580" height="19" fill="#c8f25f"/>
+  <text x="90" y="500" fill="#66736d" font-family="Arial,sans-serif" font-size="28">최신 추천코드와 사용법을 한곳에서</text>
+</svg>
