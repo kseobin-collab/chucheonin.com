@@ -1366,3 +1366,172 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* Dense referral directory layout */
+.menu-toggle,
+.mobile-nav {
+  display: none !important;
+}
+.header-inner {
+  height: 64px;
+}
+.site-header,
+.detail-body .site-header {
+  border-bottom-color: rgba(25,31,40,.06);
+}
+.header-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #4f63e9;
+  background: #eef1ff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -.2px;
+}
+.header-action:hover {
+  background: #e2e7ff;
+}
+.multi-service-grid,
+.card-grid.multi-service-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.service-card {
+  min-height: 315px;
+  padding: 18px;
+  border-radius: 20px;
+}
+.service-card.featured::after,
+.dailycafe-card::after,
+.goldmining-card::after,
+.gyeomsagyeomsa-card::after,
+.service-card.goldmining-card::after,
+.service-card.gyeomsagyeomsa-card::after {
+  width: 118px;
+  height: 118px;
+  right: -52px;
+  top: -56px;
+}
+.service-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  font-size: 17px;
+}
+.status-live,
+.status-check {
+  height: 23px;
+  padding: 0 8px;
+  font-size: 9px;
+}
+.rank-badge {
+  font-size: 10px;
+}
+.card-main {
+  margin-top: 20px;
+}
+.card-category {
+  margin-bottom: 7px;
+  font-size: 10px;
+}
+.card-main h3 {
+  min-height: 42px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.18;
+  letter-spacing: -1px;
+}
+.benefit {
+  margin-bottom: 6px;
+  gap: 5px;
+}
+.benefit strong,
+.service-card.goldmining-card .benefit strong,
+.service-card.gyeomsagyeomsa-card .benefit strong {
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+.benefit > span {
+  font-size: 10px;
+}
+.card-note {
+  min-height: 32px;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.code-preview {
+  min-height: 44px;
+  height: 44px;
+  padding: 0 8px 0 12px;
+  border-radius: 12px;
+}
+.code-preview span {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.mini-copy {
+  width: 32px;
+  height: 32px;
+}
+.offer-card-actions {
+  grid-template-columns: 1fr;
+  gap: 7px;
+  margin-top: 8px;
+}
+.secondary-offer-action,
+.primary-offer-action {
+  min-height: 42px;
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+@media (max-width: 1180px) {
+  .multi-service-grid,
+  .card-grid.multi-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .multi-service-grid,
+  .card-grid.multi-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    height: 58px;
+  }
+  .header-action {
+    min-height: 34px;
+    padding: 0 11px;
+    font-size: 11px;
+  }
+  .multi-service-grid,
+  .card-grid.multi-service-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-card {
+    min-height: 330px;
+    padding: 18px;
+  }
+  .card-main h3 {
+    min-height: 0;
+    font-size: 20px;
+  }
+  .benefit strong,
+  .service-card.goldmining-card .benefit strong,
+  .service-card.gyeomsagyeomsa-card .benefit strong {
+    font-size: 27px;
+  }
+  .offer-card-actions {
+    grid-template-columns: 1fr 1.08fr;
+  }
+}
