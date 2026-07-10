@@ -1086,6 +1086,54 @@ body {
   background: #bf8210;
 }
 
+/* Detail pages: keep navigation simple and make FAQ cards read cleanly */
+.detail-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+.detail-content {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+.toc {
+  display: none;
+}
+.detail-faq .accordion {
+  display: grid;
+  gap: 14px;
+}
+.detail-faq .accordion details {
+  padding: 0;
+  border: 1px solid #e3e7ec;
+  border-radius: 18px;
+  background: #fff;
+  overflow: hidden;
+}
+.detail-faq .accordion details:last-child {
+  border-bottom: 1px solid #e3e7ec;
+}
+.detail-faq .accordion summary {
+  min-height: auto;
+  padding: 22px 24px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+.detail-faq .accordion details[open] summary {
+  border-bottom: 1px solid #edf0f3;
+}
+.detail-faq .accordion details p {
+  margin: 0;
+  padding: 18px 24px 22px;
+  color: #6b7684;
+  background: #fbfcfe;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.detail-faq .accordion summary span::before,
+.detail-faq .accordion summary span::after {
+  background: #4e5968;
+}
+
 @media (max-width: 900px) {
   .hero::before { right: -230px; }
   .hero::after { display: none; }
@@ -1304,4 +1352,17 @@ body {
   .detail-section { margin-bottom: 56px; }
   .detail-section h2 { font-size: 29px; }
   .summary-box { margin: 22px 0; }
+}
+
+/* Final override: hide detailed anchor TOC on all detail pages */
+.toc {
+  display: none !important;
+}
+.detail-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+.detail-content {
+  width: min(100%, 900px);
+  margin-right: auto;
+  margin-left: auto;
 }
