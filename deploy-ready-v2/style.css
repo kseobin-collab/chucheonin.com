@@ -1575,3 +1575,51 @@ body {
     grid-template-columns: 1fr 1.08fr;
   }
 }
+
+/* Mobile background continuity fix */
+html,
+body {
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+main {
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    background: #f4f7fb;
+  }
+
+  body {
+    min-height: 100svh;
+  }
+
+  main {
+    background: #fff;
+  }
+
+  .site-header {
+    background: rgba(255, 255, 255, .92);
+  }
+
+  .hero {
+    background:
+      radial-gradient(circle at 94% 0%, rgba(118, 140, 255, .18), transparent 35%),
+      linear-gradient(180deg, #fbfcff 0%, #f4f7fb 100%);
+  }
+
+  .popular-section,
+  .section.popular-section {
+    background: #fff;
+  }
+
+  .proof-section,
+  .how-section,
+  .faq-section,
+  .cta-section {
+    background-clip: border-box;
+  }
+}
